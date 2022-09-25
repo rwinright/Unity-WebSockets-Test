@@ -1,0 +1,17 @@
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\bin\Debug\net6.0\WebSocketServer.exe
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\bin\Debug\net6.0\WebSocketServer.deps.json
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\bin\Debug\net6.0\WebSocketServer.runtimeconfig.json
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\bin\Debug\net6.0\WebSocketServer.dll
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\bin\Debug\net6.0\WebSocketServer.pdb
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.csproj.AssemblyReference.cache
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.AssemblyInfoInputs.cache
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.AssemblyInfo.cs
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.csproj.CoreCompileInputs.cache
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.dll
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\refint\WebSocketServer.dll
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.pdb
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.genruntimeconfig.cache
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\ref\WebSocketServer.dll
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\bin\Debug\net6.0\websocket-sharp.dll
+C:\Users\Roger Winright\Desktop\Unity-Websocket\Server\WebSocketServer\WebSocketServer\obj\Debug\net6.0\WebSocketServer.csproj.CopyComplete
