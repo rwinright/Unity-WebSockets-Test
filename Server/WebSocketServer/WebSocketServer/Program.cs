@@ -17,7 +17,8 @@ namespace WSServer
         {
             var msg = System.Text.Encoding.UTF8.GetString(e.RawData);
             Console.WriteLine(msg);
-            Send($"Welcome Back! {Get8CharacterRandomString()}");
+            var response = System.Text.Encoding.UTF8.GetBytes($"Welcome Back! {Get8CharacterRandomString()}");
+            Send(response);
         }
     }
 

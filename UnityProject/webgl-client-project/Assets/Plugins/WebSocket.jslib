@@ -143,21 +143,18 @@ var LibraryWebSocket = {
 				console.log("[JSLIB WebSocket] Connected.");
 
 			if (webSocketState.onOpen)
-				Module['dynCall_vi'](webSocketState.onOpen, instanceId); 
+				Module['dynCall_vi'](webSocketState.onOpen, instanceId);
+
 
 		};
-		
-		//Not working
-		/*
+
 		instance.ws.onmessage = function(ev) {
 
 			if (webSocketState.debug)
 				console.log("[JSLIB WebSocket] Received message:", ev.data);
 
-			if (webSocketState.onMessage === null) {
-				console.log("came back as null for some reason")
+			if (webSocketState.onMessage === null)
 				return;
-			}
 
 			if (ev.data instanceof ArrayBuffer) {
 
@@ -167,52 +164,20 @@ var LibraryWebSocket = {
 				HEAPU8.set(dataBuffer, buffer);
 
 				try {
-					Runtime.dynCall('viii', webSocketState.onMessage, [ instanceId, buffer, dataBuffer.length ]);
+					//Runtime.dynCall('viii', webSocketState.onMessage, [ instanceId, buffer, dataBuffer.length ]); deprecated as of 2021.2, use modules instead
+          //New code
+          Module.dynCall_viii(
+            webSocketState.onMessage,
+            instanceId,
+            buffer,
+            dataBuffer.length
+          );
+
 				} finally {
 					_free(buffer);
 				}
 
 			}
-
-		};
-		*/
-
-		instance.ws.onmessage = function(ev) {
-
-			if (webSocketState.debug)
-				console.log("[JSLIB WebSocket] Received message:", ev.data);
-
-			if (webSocketState.onMessage === null) {
-				console.log("Came back as null again");
-				return;
-			}
-
-			if (ev.data instanceof ArrayBuffer) {
-
-				var dataBuffer = new Uint8Array(ev.data);
-
-				var buffer = _malloc(dataBuffer.length);
-				HEAPU8.set(dataBuffer, buffer);
-
-				try {
-					Module.dynCall_viii(webSocketState.onMessage, instanceId, buffer, dataBuffer.length);
-				} finally {
-					_free(buffer);
-				}
-
-      } else {
-				var dataBuffer = (new TextEncoder()).encode(ev.data);
-
-				var buffer = _malloc(dataBuffer.length);
-				HEAPU8.set(dataBuffer, buffer);
-
-				try {
-					Module.dynCall_viii(webSocketState.onMessage, instanceId, buffer, dataBuffer.length);
-				} finally {
-					_free(buffer);
-				}
-
-      }
 
 		};
 
